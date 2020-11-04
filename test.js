@@ -3,8 +3,6 @@ const addTwoNums = require('../MochaChai/app').addTwoNums;
 const multiplyTwoNumbers = require('../MochaChai/app').multiplyTwoNumbers;
 const {Builder,By,Key,util, until} = require("selenium-webdriver");
 
-
-
 async function seleniumStart(){
     let driver = await new Builder().forBrowser("chrome").build();
     await driver.get("http://cii.co.uk")
